@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="container">
+        <form class="form js-form">
+
+          <div class="form__group">
+            <label class="form__label">
+              Username
+              <input class="form__input" type="text" name="username" placeholder="Enter username"/>
+            </label>
+          </div>
+          <div class="form__group">
+            <label class="form__label"
+              >Password
+              <input class="form__input" type="password" name="password" placeholder="Enter password"/>
+            </label>
+            <span class="form__text">Your password is between 4 and 12 characters</span>
+          </div>
+          <div class="form__group form__group--phone">
+            <label class="form__label">
+              Phone Number
+              <input class="form__input" type="tel" name="phone" placeholder="Enter phone number"/>
+            </label>
+          </div>
+          <div class="wrapper wrapper--checkbox">
+            <div class="checkbox">
+              <label class="checkbox__label">
+                <input class="checkbox__input" name="checkbox" type="checkbox"/>
+                Follow Us
+                <span class="checkbox checkbox__input--style"></span>
+              </label>
+            </div>
+
+            <div class="radio">
+              <div class="radio__inner">
+                <label class="radio__label">
+                  <input class="radio__input" name="radiobutton" type="radio" />
+                  18-25 years old
+                  <span class="radio radio__input--style"></span>
+                </label>
+              </div>
+              <div class="radio__inner">
+                <label class="radio__label">
+                  <input class="radio__input" name="radiobutton" type="radio" />
+                  25-35 years old
+                  <span class="radio radio__input--style"></span>
+                </label>
+              </div>
+              <div class="radio__inner">
+                <label class="radio__label">
+                  <input class="radio__input" name="radiobutton" type="radio" />
+                  35-45 years old
+                  <span class="radio radio__input--style"></span>
+                </label>
+              </div>
+              <div class="radio__inner">
+                <label class="radio__label">
+                  <input class="radio__input" name="radiobutton" type="radio" />
+                  45-55+ years old
+                  <span class="radio radio__input--style"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <h6 class="dropdown__label">Countries</h6>
+            <input class="dropdown__button" type="button" value="Select one" name="dropdown"/>
+            <div class="dropdown__list">
+              <input class="dropdown__list--item"  type="button"  value="Latvia"/>             
+               <input class="dropdown__list--item" type="button" value="Estonia"/>
+              <input class="dropdown__list--item" type="button" value="Lithuania"/>
+              <input class="dropdown__list--item" type="button" value="Sweeden"/>
+              <input class="dropdown__list--item" type="button" value="Finland"/>
+              <input class="dropdown__list--item" type="button" value="Norway"/>
+              <input class="dropdown__list--item" type="button" value="Germany"/>
+              <input class="dropdown__list--item" type="button" value="Poland"/>
+              <input class="dropdown__list--item" type="button" value="France"/>
+            </div>
+          </div>
+          <div class="submit">
+            <button class="submit__button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__bg">
+          <img
+            class="modal__bg--image"
+            src="./assets/images/success-bg.png"
+            alt="image"
+          />
+        </div>
+        <div class="modal__success">
+          <img class="modal modal__success--image" src="./assets/images/succes__checked.svg" alt="image"/>
+          <p class="modal__text">Thanks for signing up!</p>
+          <div class="modal__link">
+            <a class="modal__link--avatar" href="#">Glen Williams</a>
+            <a class="modal__link--text" href="#">Read more 🡢</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts.js"></script>
+  </body>
+</html>
